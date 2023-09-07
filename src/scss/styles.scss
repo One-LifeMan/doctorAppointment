@@ -1,0 +1,112 @@
+
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/utils";
+@import "./base/media";
+
+// @import "./base/flatpickr.scss";
+
+// BASE
+
+@import "./blocks/*.scss";
+
+
+// @import "./../../node_modules/flatpickr/dist/flatpickr.css";
+
+
+// BLOCKS
+
+.doctors-appointment {
+    min-height: 100vh;
+    padding: 60px 0;
+    background-color: $second-bg;
+    &__inner {
+    }
+}
+.appointment {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $main-bg;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAGxJREFUGFctjVEVgDAMAxMxDDXzADbgm9lgHuoGxISXln103a65cjufThF1BLcU6jacVwuAIAFJ8Kgr9+Ptc7QQZF6R35LwHi3yix4hKPlh7VvaXFSZEvzaeyxBMJlrpt1vx9PnWINOGqWy0h/CeDUSDs3ffQAAAABJRU5ErkJggg==), $main-bg;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        top: 0;
+        right: -50px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAGxJREFUGFctjVEVgDAMAxMxDDXzADbgm9lgHuoGxISXln103a65cjufThF1BLcU6jacVwuAIAFJ8Kgr9+Ptc7QQZF6R35LwHi3yix4hKPlh7VvaXFSZEvzaeyxBMJlrpt1vx9PnWINOGqWy0h/CeDUSDs3ffQAAAABJRU5ErkJggg==), $main-bg;
+        border-left: 3px solid #ff000073;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrap-input {
+        // margin: 6px 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+    }
+    &__name_input {
+        margin: 0 auto 0 0;
+    }
+    &__user-sex {
+        & input:checked {
+            & + label {
+                text-decoration: underline;
+                color: green;
+            }
+        }
+    }
+    &__checkМark {
+        width: 20px;
+    }
+    &__calendar {
+        color: $main-text-color;
+    }
+    &__hint {
+        margin: 20px 0 0 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+        color: black;
+    }
+    &__btn {
+        display: block;
+        margin: 40px auto 0;
+        color: $main-text-color;
+        background-color: #ffffff00;
+        // background-image: url(./../img/btn-background.svg);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        &:hover {
+            text-decoration: underline;
+            text-shadow: 1px 1px black;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+.flatpickr-calendar,
+.flatpickr-year,
+.flatpickr-month {
+    font-size: 0.8rem;
+}
+.flatpickr-weekday,
+.flatpickr-day,
+input .flatpickr-hour,
+.flatpickr-minute {
+    font-size: 1rem;
+}

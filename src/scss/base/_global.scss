@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+    font-size: $main-font-size-rem;
+}
+
+body {
+    font-family: $main-font-family;
+    font-size: $main-font-size;
+    font-style: normal;
+    font-weight: 400;
+    color: $main-text-color;
+    background-color: $main-bg;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    -webkit-user-select: none; /* Safari, Chrome та нові версії Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer та Edge */
+    user-select: none; /* Стандарт */
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+*::selection {
+    // background-color: rgba($second-bg, 0.5);
+}
+
+.required::before {
+    content: "*";
+    color: red;
+}
+
+.check-true::before {
+    content: "✓";
+    color: green;
+}
+.check-false::before {
+    content: "✗";
+    color: red;
+}
+
+.label_pointer {
+    cursor: pointer;
+}
+
+.appointment__wrap-input>input {
+    outline: none;
+    border: none;
+    // background: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid black;
+    color: green;
+};
+
+.error {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: red;
+}
+
+
+// input:valid {
+//     background-color: chartreuse;
+// }
+// input:invalid {
+//     background-color: rgba(255, 0, 0, 0.185);
+// }

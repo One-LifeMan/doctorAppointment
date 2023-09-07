@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lorem ipsum dolor sit amet." />
+        <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+        <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg">
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="./img/favicon/favicon-48x48.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="./img/favicon/favicon-64x64.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="./img/favicon/favicon-128x128.png"> -->
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        
+        @@include('blocks/header.html')
+        
+        <div class="wrapper">
+            <main class="main">
+                <section class="doctors-appointment">
+                    <div class="container">
+                        <div class="doctors-appointment__inner">
+                            <div class="appointment">
+                                <h2 class="appointment__title">Запис на прийом до лікаря</h2>
+                                <form class="appointment__form" name="appointment" autocomplete="off">
+                                    <div class="appointment__wrap-input">
+                                        <label class="appointment__name_input required" for="user-last-name">Прізвище:</label>
+                                        <input class="appointment__input" type="text" name="userLastName" required>
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="lastNameErrorLabel">помилка</span>
+                                    <div class="appointment__wrap-input">
+                                        <label class="appointment__name_input required" for="user-first-name">Ім'я:</label>
+                                        <input class="appointment__input" type="text" name="userFirstName"  required>
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="firstNameErrorLabel">помилка</span>
+                                    <div class="appointment__wrap-input">
+                                        <label class="appointment__name_input required" for="user-middle-name">По батькові:</label>
+                                        <input class="appointment__input" type="text" name="userMiddleName" required>
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="middleNameErrorLabel">помилка</span>
+                                    <div class="appointment__wrap-input">
+                                        <label class="appointment__name_input required" for="user-phone-number">Телефон:</label>
+                                        <input class="appointment__input" type="tel" name="userPhoneNumber" required inputmode="tel">
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="phoneNumberErrorLabel">помилка</span>
+                                    <div class="appointment__wrap-input">
+                                        <span class="appointment__name_input required">Стать:</span>
+                                        <div class="appointment__user-sex">
+                                            <input class="none" type="radio" id="male" name="userSex" value="male" required>
+                                            <label class="label_pointer" for="male">Чоловік</label>
+                                            <span> / </span>
+                                            <input class="none" type="radio" id="female" name="userSex" value="female" required>
+                                            <label class="label_pointer" for="female">Жінка</label>
+                                        </div>
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="sexErrorLabel">помилка</span>
+                                    <div class="appointment__wrap-input">
+                                        <label class="appointment__name_input required" for="user-time">Час візиту:</label>
+                                        <input class="appointment__input" id="datepicker" class="appointment__calendar" type="datetime-local" name="userTime" id="user-time"  required>
+                                        <span class="appointment__checkМark"></span>
+                                    </div>
+                                    <span class="error" id="timeErrorLabel">помилка</span>
+                                    <p class="appointment__hint">Поля із <span class="required"></span> є обов'язковими для заповнення.</p>
+                                    <input class="appointment__btn" type="submit" value="Оформити візит">
+                                </form>
+                            </div>
+                            <div class=""></div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            @@include('blocks/footer.html')
+        </div>
+        
+        <script src="./js/index.bundle.js"></script>
+    </body>
+</html>

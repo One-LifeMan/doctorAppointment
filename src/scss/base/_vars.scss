@@ -1,0 +1,36 @@
+// -------------------------------------- size start
+$laptop-size: 1199px;
+$tablet-size: 959px;
+$mobile-size: 599px;
+// -------------------------------------- size end
+// -------------------------------------- color start
+	// $main-bg: #ffffff;
+	$main-bg: #f3f9ff;
+    $second-bg: #c4c989;
+
+    $main-text-color: blue;
+    $second-text-color: #ffffff;
+	
+// .dark {
+//     $main-bg: #252526;
+//     $main-text-color: #ffffff;
+// }
+
+// -------------------------------------- color end
+// -------------------------------------- font start
+// font-family: 'Caveat', cursive;
+// font-family: 'Montserrat', sans-serif;
+$main-font-family: 'Caveat', cursive;
+// $second-font-family: "Arial";
+// $third-font-family: "Arial";
+
+$main-font-size-rem: calc(12px + 10 * (100vw / 1920));
+$main-font-size: 1.25rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2.25rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.75rem;
+$h6-font-size: 1.5rem;
+
+// -------------------------------------- font end
